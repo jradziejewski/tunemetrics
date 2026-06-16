@@ -1,0 +1,28 @@
+{
+  "name": "tunemetrics",
+  "version": "1.0.0",
+  "description": "A production-ready FastAPI backend that accepts uploaded audio files and returns extracted music features — tempo (BPM), chromagram, and a placeholder for key detection.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run dev --prefix frontend\" \"uvicorn app.main:app --reload\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jradziejewski/tunemetrics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jradziejewski/tunemetrics/issues"
+  },
+  "homepage": "https://github.com/jradziejewski/tunemetrics#readme",
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  }
+}
